@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true">
+
+    <servlet>
+      <servlet-name>CookieTest</servlet-name>
+      <servlet-class>coreservlets.CookieTest</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CookieTest</servlet-name>
+        <url-pattern>/cookie.test</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+      <servlet-name>ClientAccessCounts</servlet-name>
+      <servlet-class>coreservlets.ClientAccessCounts</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ClientAccessCounts</servlet-name>
+        <url-pattern>/access.counts</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+      <servlet-name>RepeatVisitor</servlet-name>
+      <servlet-class>coreservlets.RepeatVisitor</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RepeatVisitor</servlet-name>
+        <url-pattern>/repeat.visitor</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+      <servlet-name>RegistrationForm</servlet-name>
+      <servlet-class>coreservlets.RegistrationForm</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegistrationForm</servlet-name>
+        <url-pattern>/registration.form</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+      <servlet-name>RegistrationServlet</servlet-name>
+      <servlet-class>coreservlets.RegistrationServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <url-pattern>coreservlets.RegistrationServlet</url-pattern>
+    </servlet-mapping>
+
+
+
+
+</web-app>
